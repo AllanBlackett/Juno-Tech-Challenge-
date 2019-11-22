@@ -1,0 +1,307 @@
+/*--------------------------------------------------------------
+. Default Styles
+--------------------------------------------------------------*/
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}
+
+/* Utility Classes */
+.clr {
+  clear: both;
+  margin: 6rem;
+}
+
+/* Main Styling */
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+/*--------------------------------------------------------------
+. Section: Navigation
+--------------------------------------------------------------*/
+.logo {
+  float: left;  
+}
+
+.navbar {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 3rem 0 0rem 0;
+  padding-bottom: 1rem;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.main-nav li {
+  margin: 15px 0 15px 0;
+  float: left;
+  padding: 0 0 0 50px;
+  text-decoration: none;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #4A455C;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: none;
+}
+/*--------------------------------------------------------------
+. Section: Tech Challenge
+--------------------------------------------------------------*/
+
+#sec1 {
+  position: relative;
+  margin-top: 3rem;
+}
+
+#sec1 .sec1_img {
+width: 100%;
+}
+
+.box_tc {
+  height: 350px;
+  width: 520px;
+  background-color: #D64C31;
+  color: #fff;
+  position: absolute;
+  bottom: -5%;
+}
+
+.wrapper_tc {
+  padding: 50px;
+}
+
+#sec1 .box_tc h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 70px;
+  font-weight: 100;
+  padding-bottom: 15px;  
+}
+
+#sec1 .box_tc h6 {
+  font-size: 20px;
+  line-height: 33px;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 550;
+}
+
+
+/*--------------------------------------------------------------
+. Section: Welcome To Juno
+--------------------------------------------------------------*/
+#sec2 {
+  margin-bottom: 6em;
+}
+
+.box_welcome {
+  background-color: #E8F1EE;
+  position: relative;
+}
+
+.wrapper_welcome {
+  padding: 50px 30px 60px 70px;
+}
+
+.box_welcome .wrapper_welcome h1 {
+  font-size: 50px;
+  font-family:'Montserrat', sans-serif;
+  color: #4A455C;
+  padding-bottom: 40px;
+}
+
+.box_welcome .wrapper_welcome h2 {
+  color: #4A455C;
+}
+
+.sec2_img {
+  width: 85%;
+} 
+
+.fas {
+  background-color: rgb(255, 94, 0);
+  color: #fff;
+  position: absolute;
+  left: 77%;
+  top: 15%;
+  padding: 0 30px 0 30px; 
+}
+
+.box_welcome .wrapper_welcome h5 {
+  font-size: 18px;
+  font-family:'Montserrat', sans-serif;
+  padding: 20px 0 20px 0;
+  color: #D64C31;
+}
+
+.box_welcome .wrapper_welcome h2 {
+  font-size: 40px;
+  font-family:'Montserrat', sans-serif;
+}
+
+/*--------------------------------------------------------------
+. Section: Blog
+--------------------------------------------------------------*/
+
+.grid_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(40%, 5fr));
+  grid-gap: 60px;
+}
+
+.grid_wrapper {
+  width: 100%; 
+}
+
+.grid_content {
+  background-color: #FFF0E7;
+  padding: 30px 25px 30px 40px;
+}
+
+.grid_content h6 {
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-family:'Montserrat', sans-serif;
+  color: #4A455C;
+}
+
+.grid_content h1 {
+  padding-bottom: 15px;
+  font-size: 4em;
+  font-family: 'Cormorant Garamond', serif;
+  color: #D64C31;
+  font-weight: 100;
+}
+
+.grid_content p {
+  font-family:'Montserrat', sans-serif;
+  line-height: 30px;
+  font-weight: bold;
+  color: #4A455C;
+}
+
+article {
+  position: relative;
+  width: 100%;
+}
+
+.article-img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -5px;
+}
+
+/*--------------------------------------------------------------
+. Section: Footer
+--------------------------------------------------------------*/
+
+footer {
+  background-color: #D64C31;
+  color: #fff; 
+  height: 25em;
+  font-family:'Montserrat', sans-serif;
+  width: 100%;
+  position: relative;
+}
+
+.footerinfo {
+  width: 60%;
+  padding: 40px 60px 20px 75px;
+}
+
+footer .footerinfo h2 {
+  padding: 15px 0 8px 0;
+}
+
+footer .footerinfo p {
+  font-size: 17px;
+  line-height: 33px;
+}
+
+footer .footerinfo h6 {
+  font-size: 15px;
+  font-weight: 800;
+  display: block;
+  clear: both;
+  padding-top: 20px;
+}
+
+footer .footerinfo h2 {
+  padding: 15px 0 8px 0;
+}
+
+.footernav a {
+  float: left;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 25px 0 15px 0 ; 
+}
+
+.footernav-links {
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer_contact {
+  height: 460px;
+  width: 450px;
+  background-color: #4A455C;
+  color: #fff;
+  position: absolute;
+  left: 60%;
+  bottom: 0;
+  padding: 90px 50px 50px 50px;
+} 
+
+.footer_contact h2 {
+  padding-bottom: 30px;
+}
+
+form .input-field {
+  font-family:'Montserrat', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 3em;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  font-size: 20px;
+  height: 50px;
+  width: 130px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 0 20px 0;
+  background-color: rgb(255, 192, 153);
+}
+
+form button:hover {
+  background-color: #D64C31;
+  color: #fff;
+}
+
+.footer_contact p {
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons i {
+  padding-right: 20px;
+}
+
