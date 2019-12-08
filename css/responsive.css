@@ -1,4 +1,20 @@
 /*--------------------------------------------------------------
+. Widescreen
+--------------------------------------------------------------*/
+@media (max-width: 1160px) {
+
+  /* Section: Welcome To Juno */
+  #sec2 {
+    height: 49em;
+  }
+
+  .clr2 {
+    display: none;
+  }
+}
+
+
+/*--------------------------------------------------------------
 . Tablet
 --------------------------------------------------------------*/
 @media (max-width: 960px) {
@@ -28,24 +44,30 @@
     float: none;
   }
 
+
   /* Section: Tech Challenge */
   .box_tc {
     position: relative;
     width: 100%;
     height: 50%;
     text-align: center;
+    margin-top: -5px;
   }
+
 
   /* Section: Welcome To Juno */
+  #sec2 {
+    height: 45em;
+  }
+
   .grid_wrapper article {
     text-align: center;
-
   }
 
-  .box_welcome {
-    position: relative;
-    width: 100%;
+  .clr {
+    margin: 1rem;
   }
+
 
   /* Section: Footer */
   footer {
@@ -63,7 +85,7 @@
   }
 
   .footerinfo img {
-    width: 50%;
+    width: 45%;
   }
 
   footer .footerinfo p {
@@ -87,6 +109,7 @@
     top: 0;
     width: 100%;
     text-align: center;
+    padding: 50px 70px 10px 70px;
   }
 
   form {
@@ -94,32 +117,64 @@
   }
 }
 
+
 /*--------------------------------------------------------------
 . Large Sized Mobile
 --------------------------------------------------------------*/
 @media(max-width: 770px) {
 
+  /* Section: Tech Challenge */
+  .wrapper_tc {
+    padding: 20px;
+  }
+
+  #sec1 .box_tc h1 {
+    white-space: nowrap;
+  }
+
+
   /* Section: Welcome To Juno */
+  #sec2 {
+    height: 41.5em;
+  }
+
+  .box_welcome {
+    position: relative;
+  }
+
+  .box_welcome .wrapper_welcome h1 {
+    font-size: 7vw;
+  }
+
   .wrapper_welcome {
     text-align: center;
-    padding: 10% 10% 10% 10%;
+    padding: 5% 2%;
   }
 
   .fas {
     display: none;
   }
 
-  /* Section Blog/News */
+
+  /* Section: Blog */
   .grid_wrapper {
-    display: block;
+    display: inline-block;
   }
 
   .grid_wrapper article {
-    margin-top: 3em;
+    margin-top: 1em;
   }
 
-  /* Section #3: Footer */
+  .grid_content {
+    padding: 20px 30px;
+  }
 
+  .grid_content h1 {
+    font-size: 6vw;
+  }
+
+
+  /* Section #3: Footer */
   .footernav a {
     float: none;
     display: block;
@@ -131,17 +186,29 @@
   footer .footerinfo p {
     margin-bottom: 0.2rem;
   }
+
+  .icons i {
+    padding: 15px;
+  }
 }
+
 
 /*--------------------------------------------------------------
 . Medium Sized Mobile
 --------------------------------------------------------------*/
 @media(max-width: 500px) {
 
+  /* Main Styling */
+  body {
+    margin: 0;
+  }
+
+
   /* Utility Class */
   .clr {
     margin: 0;
   }
+
 
   /* Section: Navbar */
   .navbar {
@@ -149,12 +216,13 @@
   }
 
   #sec1 {
-    margin-top: 10rem;
+    margin-top: 3rem;
   }
 
   .img_wrapper .logo {
     width: 65%;
   }
+
 
   /* Dropdown Navigation */
   .dropnav {
@@ -193,7 +261,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
   }
 
   .dropdown-content a:hover {
@@ -208,9 +276,16 @@
     background-color: #4A455C;
   }
 
+
   /* Section: Tech Challenge */
+  .wrapper_tc {
+    padding: 15px;
+  }
+
   #sec1 .box_tc h1 {
     font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   #sec1 .box_tc h6 {
@@ -218,22 +293,27 @@
     line-height: 25px;
   }
 
+
   /* Section: Welcome To Juno */
   #sec2 {
     margin-top: 2rem;
+    height: 28em;
   }
 
   .box_welcome .wrapper_welcome h1 {
-    font-size: 2.5rem;
+    font-size: 8vw;
+    padding-bottom: 25px;
   }
+
 
   .box_welcome .wrapper_welcome h2 {
     font-size: 1rem;
   }
 
+
   /* Section: Blog */
-  .grid_content h1 {
-    font-size: 1.5rem;
+  .grid_content {
+    padding: 15px 20px;
   }
 
   .grid_content h6 {
@@ -246,17 +326,23 @@
     font-weight: lighter;
   }
 
-  /* Section #4: Footer */
+
+  /* Section: Footer */
   .footer_contact {
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-top: 2rem;
-    padding-bottom: 0;
-    height: 310px;
+    padding-bottom: 1rem;
+    height: 360px;
+    padding: 40px 10px;
   }
 
   .footer_contact h2 {
     padding-bottom: 30px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 0 60px;
   }
 
   form .input-field {
@@ -275,11 +361,12 @@
   .footer_contact p {
     font-size: 1rem;
     line-height: 25px;
+    padding: 10px 40px;
   }
 
   .icons i {
-    font-size: 1em;
-    padding-right: 1px;
+    font-size: 1.5em;
+    padding: 0 7px;
   }
 
   footer .footerinfo h2 {
@@ -292,7 +379,7 @@
   }
 
   .footerinfo {
-    padding: 20px 30px 20px 30px;
+    padding: 10px 30px 20px 30px;
   }
 }
 
@@ -303,7 +390,7 @@
 
   /* Section: Tech Challenge */
   #sec1 .box_tc h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   #sec1 .box_tc h6 {
@@ -311,13 +398,25 @@
     line-height: 22px;
   }
 
+
+  /* Section: Welcome To Juno */
+  #sec2 {
+    height: 24em;
+  }
+
+
   /* Section: Blog  */
   .grid_content p {
     font-size: 0.6rem;
     line-height: 22px;
   }
 
+
   /* Section: Footer */
+  form {
+    padding: 0 30px;
+  }
+
   .footer_contact {
     height: 340px;
   }
@@ -331,4 +430,12 @@
     margin-top: 10px;
     padding: 0 20px 30px 20px;
   }
+}
+
+
+@media(max-width: 321px) {
+  .footer_contact {
+    height: 380px;
+  }
+
 }
