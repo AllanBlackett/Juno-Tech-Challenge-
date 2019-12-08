@@ -6,13 +6,18 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 /* Utility Classes */
 .clr {
   clear: both;
   margin: 6rem;
+}
+
+.clr2 {
+  clear: both;
+  margin: 5rem;
 }
 
 /* Main Styling */
@@ -26,7 +31,7 @@ body {
 . Section: Navigation
 --------------------------------------------------------------*/
 .logo {
-  float: left;  
+  float: left;
 }
 
 .navbar {
@@ -56,6 +61,7 @@ body {
 .dropdown {
   display: none;
 }
+
 /*--------------------------------------------------------------
 . Section: Tech Challenge
 --------------------------------------------------------------*/
@@ -66,7 +72,7 @@ body {
 }
 
 #sec1 .sec1_img {
-width: 100%;
+  width: 100%;
 }
 
 .box_tc {
@@ -84,15 +90,16 @@ width: 100%;
 
 #sec1 .box_tc h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: 4em;
   font-weight: 100;
-  padding-bottom: 15px;  
+  padding-bottom: 15px;
 }
 
 #sec1 .box_tc h6 {
   font-size: 20px;
   line-height: 33px;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 550;
 }
 
@@ -101,12 +108,13 @@ width: 100%;
 . Section: Welcome To Juno
 --------------------------------------------------------------*/
 #sec2 {
-  margin-bottom: 6em;
+  height: 55em;
 }
 
 .box_welcome {
   background-color: #E8F1EE;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .wrapper_welcome {
@@ -115,9 +123,9 @@ width: 100%;
 
 .box_welcome .wrapper_welcome h1 {
   font-size: 50px;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #4A455C;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 }
 
 .box_welcome .wrapper_welcome h2 {
@@ -125,28 +133,31 @@ width: 100%;
 }
 
 .sec2_img {
-  width: 85%;
-} 
+  width: 90%;
+}
 
 .fas {
   background-color: rgb(255, 94, 0);
   color: #fff;
   position: absolute;
-  left: 77%;
-  top: 15%;
-  padding: 0 30px 0 30px; 
+  left: 79%;
+  top: 17%;
+  padding: 0 30px 0 30px;
+  transform: scaleY(0.8);
+  transform-origin: 0 0;
+  font-size: 9vw;
 }
 
 .box_welcome .wrapper_welcome h5 {
   font-size: 18px;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 20px 0 20px 0;
   color: #D64C31;
 }
 
 .box_welcome .wrapper_welcome h2 {
   font-size: 40px;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -160,31 +171,34 @@ width: 100%;
 }
 
 .grid_wrapper {
-  width: 100%; 
+  width: 100%;
 }
 
 .grid_content {
   background-color: #FFF0E7;
   padding: 30px 25px 30px 40px;
+
 }
 
 .grid_content h6 {
   padding-bottom: 15px;
   font-size: 15px;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #4A455C;
 }
 
 .grid_content h1 {
   padding-bottom: 15px;
-  font-size: 4em;
+  font-size: 3.8vw;
   font-family: 'Cormorant Garamond', serif;
   color: #D64C31;
   font-weight: 100;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .grid_content p {
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 30px;
   font-weight: bold;
   color: #4A455C;
@@ -207,9 +221,9 @@ article {
 
 footer {
   background-color: #D64C31;
-  color: #fff; 
+  color: #fff;
   height: 25em;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   position: relative;
 }
@@ -244,7 +258,7 @@ footer .footerinfo h2 {
   float: left;
   text-decoration: none;
   font-size: 17px;
-  padding: 25px 0 15px 0 ; 
+  padding: 25px 0 15px 0;
 }
 
 .footernav-links {
@@ -262,14 +276,14 @@ footer .footerinfo h2 {
   left: 60%;
   bottom: 0;
   padding: 90px 50px 50px 50px;
-} 
+}
 
 .footer_contact h2 {
   padding-bottom: 30px;
 }
 
 form .input-field {
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   width: 100%;
   height: 3em;
@@ -302,6 +316,5 @@ form button:hover {
 }
 
 .icons i {
-  padding-right: 20px;
+  padding-right: 30px;
 }
-
